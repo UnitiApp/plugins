@@ -40,8 +40,8 @@ define(function(require) {
                     today: {
                         day: 'Today',
                         icon: today.day.condition.icon,
-                        low: Math.round(today.day.maxtemp_f),
-                        high: Math.round(today.day.mintemp_f)
+                        low: Math.round(today.day.mintemp_f),
+                        high: Math.round(today.day.maxtemp_f)
                     },
                     forecast: []
                 };
