@@ -1,0 +1,12 @@
+body.spring {
+    background-image: url('../seasonal-background-image/images/spring.jpg');
+}
+body.summer {
+    background-image: url('../seasonal-background-image/images/summer.jpg');
+}
+body.autumn {
+    background-image: url('../seasonal-background-image/images/autumn.jpg');
+}
+body.winter {
+    background-image: url('../seasonal-background-image/images/winter.jpg');
+}

@@ -1,0 +1,17 @@
+/* Time Plugin
+-------------------------------------------------- */
+.plugin--time .plugin--time-time {
+    padding-left: 10px;
+}
+.plugin--time .table {
+    margin-bottom: 0px;
+}
+.plugin--time .table>tbody>tr>td {
+    padding: 0px;
+    line-height: inherit;
+    vertical-align: middle;
+    border-top: 0px none;
+}
+.plugin--time .table-responsive {
+    border: 0px none;
+}

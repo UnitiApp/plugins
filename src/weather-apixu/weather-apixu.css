@@ -1,0 +1,30 @@
+/* Weather Plugin
+-------------------------------------------------- */
+.plugin--weather-apixu {
+	margin: 0px 0px 15px 0px;    
+}
+.plugin--weather-apixu .table {
+    margin-bottom: 0px;
+}
+.plugin--weather-apixu .table>tbody>tr>td {
+    padding: 0px;
+    line-height: inherit;
+    vertical-align: middle;
+    border-top: 0px none;
+}
+.plugin--weather-apixu .table-responsive {
+    border: 0px none;
+}
+.plugin--weather-apixu table.plugin--weather-apixu-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.plugin--weather-apixu table.plugin--weather-apixu-table>tbody>tr>td {
+	padding: 5px;
+	background: rgba(0, 0, 0, .3);
+	-webkit-backdrop-filter: grayscale(1) contrast(3) blur(1px);
+  	backdrop-filter: grayscale(1) contrast(3) blur(1px);
+}
+.plugin--weather-apixu  table.plugin--weather-apixu-table>tbody>tr>td.plugin--weather-apixu-today-forecast {
+    width: 25%;
+}

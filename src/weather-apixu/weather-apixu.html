@@ -1,0 +1,29 @@
+<% if (weather) { %>
+<div class="table-responsive">
+    <table class="table plugin--weather-apixu-table">
+        <tr>
+            <% if (weather.today) { %>
+            <td class="text-center plugin--weather-apixu-today-forecast">
+                <div class="plugin--weather-apixu-today-forecast-date"><%- weather.today.day %></div>
+                <img class="plugin--weather-apixu-today-forecast-icon" src="<%- weather.today.icon %>" />
+                <div class="plugin--weather-apixu-today-forecast-temperature">
+                    <%- weather.today.low %>&deg;/<%- weather.today.high %>&deg;
+                </div>
+            </td>
+            <% } %>
+
+            <% if (weather.forecast) { %>
+            <% _(weather.forecast).each(function(forecast) { %>
+            <td class="text-center plugin--weather-apixu-daily-forecast">
+                <div class="plugin--weather-apixu-daily-forecast-day"><%- forecast.day %></div>
+                <img class="plugin--weather-apixu-daily-forecast-icon" src="<%- forecast.icon %>" />
+                <div class="plugin--weather-apixu-daily-forecast-temperature">
+                    <small><%- forecast.low %>&deg;/<%- forecast.high %>&deg;</small>
+                </div>
+            </td>
+            <% }); %>
+            <% } %>
+        </tr>
+    </table>
+</div>
+<% } %>
