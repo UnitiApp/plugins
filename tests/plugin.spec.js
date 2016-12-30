@@ -18,18 +18,18 @@ define(function(require) {
 
         describe('destroyPlugin method', function() {
             var triggerSpy,
-                unbindSpy;
+                offSpy;
                 
-            it('should trigger an event and unbind', function() {
+            it('should trigger an event and off', function() {
                 createPlugin();
 
                 triggerSpy = spyOn(view, 'trigger');
-                unbindSpy = spyOn(view, 'unbind');
+                offSpy = spyOn(view, 'off');
 
                 view.destroyPlugin();
 
                 expect(triggerSpy).toHaveBeenCalledWith('destroy-plugin', view);
-                expect(unbindSpy).toHaveBeenCalled();
+                expect(offSpy).toHaveBeenCalled();
             });
         });
     });

@@ -32,6 +32,8 @@ define(function(require) {
         /**
          * This method gets called when the plugin is instantiated.
          *
+         * Initialize private variables here.
+         *
          * @param {object} options - options for this plugin
          * @returns {void}
          */
@@ -45,6 +47,8 @@ define(function(require) {
          * This method will be called after your method is instantiated.
          * Use this method to confirm the options you need for your plugin
          * to operate are properly set.
+         *
+         * Verify if custom images are used.
          *
          * @returns {void}
          */
@@ -66,6 +70,9 @@ define(function(require) {
          * This method will be called after your plugin is instantiated.
          * This is a good area to do any setup for your plugin.
          *
+         * Retrieves the current season based on the day of the year.
+         * Also sets up an interval to check the current season.
+         *
          * @returns {void}
          */
         create: function() {
@@ -76,6 +83,8 @@ define(function(require) {
         /**
          * This method will be called when your plugin will be destoryed.
          * This is a good area to do any cleaning up for your plugin.
+         *
+         * Clean up variables and clear out the interval.
          *
          * @returns {void}
          */
@@ -89,6 +98,9 @@ define(function(require) {
         /**
          * Sets up the interval and when it's triggered,
          * initiate a re-render of the plugin.
+         *
+         * Initiates the interval to get the current season.
+         * It re-renders the background when the season has changed.
          *
          * @returns {void}
          */
@@ -126,9 +138,9 @@ define(function(require) {
         },
 
         /**
-         * This method renders the template and returns it to the caller.
+         * This method sets the body with the background image.
          *
-         * @returns {string} html markup
+         * @returns {void}
          */
         render: function() {
             if (this.useCustomImages === true) {

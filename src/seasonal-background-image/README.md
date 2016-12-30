@@ -1,7 +1,9 @@
 # Seasonal Background Image
 
+
 ## Description ##
 This plugin alters the background image based on the current season.
+
 
 ## Configuration Options ##
 
@@ -13,6 +15,7 @@ Note: the urls need to be fully qualified.
 - `summer` - 'http://www.google.com/images/summer-01.png'
 - `autumn` - 'http://www.google.com/images/fall-image.jpg'
 - `winter` - 'http://www.google.com/images/01.jpg'
+
 
 ## Contributing ##
 

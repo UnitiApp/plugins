@@ -69,7 +69,7 @@ module.exports = {
         "consistent-return": "error",
         "curly": "error",
         "default-case": "error",
-        "dot-location": "error",
+        "dot-location": "off",
         "dot-notation": "error",
         "eqeqeq": "error",
         "guard-for-in": "error",
@@ -145,7 +145,7 @@ module.exports = {
         "no-undef-init": "error",
         "no-undef": "off",
         "no-undefined": "error",
-        "no-unused-vars": ["error", {"varsIgnorePattern": "CSS"}],
+        "no-unused-vars": ["error", {"varsIgnorePattern": "CSS|Bootstrap"}],
         "no-use-before-define": "error",
 
         // Node.js and CommonJS (http://eslint.org/docs/rules/#nodejs-and-commonjs)

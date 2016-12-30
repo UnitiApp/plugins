@@ -34,6 +34,8 @@ define(function(require) {
          * Ensures the options initialized with in the constructor
          * provide what the plugin needs to operate.
          *
+         * Sets default options in the event they are not provided.
+         *
          * @returns {void}
          */
         ensureOptions: function() {

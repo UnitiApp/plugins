@@ -18,6 +18,7 @@ define(function(require) {
 
     return Plugin.extend({
         __NAME: 'weather-apixu',
+
         template: _.template(Template),
 
         /**
@@ -33,6 +34,8 @@ define(function(require) {
         /**
          * Ensures the options initialized with in the constructor
          * provide what the plugin needs to operate.
+         *
+         * Sets default options in the event they are not provided.
          *
          * @returns {void}
          */
@@ -51,7 +54,7 @@ define(function(require) {
         },
 
         /**
-         * Sets up an interval to update the time.
+         * Sets up an interval to update the weather.
          *
          * @returns {void}
          */
@@ -88,6 +91,7 @@ define(function(require) {
 
         /**
          * Fetches the weather and initiates a re-render of the plugin.
+         * We also cache the resources data so no repeated calls are made.
          *
          * @returns {void}
          */

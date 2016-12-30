@@ -24,7 +24,7 @@ define(function(require) {
          */
         destroyPlugin: function() {
             this.trigger('destroy-plugin', this);
-            this.unbind();
+            this.off();
         }
     });
 });

@@ -32,6 +32,7 @@ Plugins are made up of [backbone views](http://backbonejs.org/#View). Dependenci
 - Plugins should make use of [bootstrap](http://getbootstrap.com/) for markup, css and components.
 - Plugins should make use of [font-awesome](http://fontawesome.io/) for additional icons.
 - Each plugin needs to inherit from the base [Plugin view](https://github.com/UnitiApp/uniti-plugins/blob/master/src/plugin.js).
+- Each plugin needs to have a `__NAME` property defining the name of the plugin.
 - The order of methods called on your Plugin are as follows:
     - **initialize** - This method you will call the parent's constructor. This line `Plugin.prototype.initialize.apply(this, [options]);` needs to be the first line to run.
     - **ensureOptions** - This method is provided for you to validate the options required for your plugin to operate exist and are set with values.
